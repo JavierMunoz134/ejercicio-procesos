@@ -1,10 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        // Paso 5
         int[] arrayNumeros = new int[10];
         Utilidades.rellenarArrayAleatorio(arrayNumeros);
 
-        // Paso 6
         long startTime = System.nanoTime();
         for (int numero : arrayNumeros) {
             boolean esPrimo = Utilidades.esPrimo(numero);
@@ -12,7 +10,6 @@ public class Main {
         }
         long endTime = System.nanoTime();
 
-        // Mostrar el tiempo en segundos, milisegundos y nanosegundos
         long elapsedTime = endTime - startTime;
         System.out.println("\nTiempo de ejecución: ");
         System.out.println("Segundos: " + elapsedTime / 1e9);
@@ -33,7 +30,6 @@ public class Main {
             }
             endTime = System.nanoTime();
 
-            // Mostrar el tiempo en segundos, milisegundos y nanosegundos
             elapsedTime = endTime - startTime;
             System.out.println("\nTiempo de ejecución para 100 elementos: ");
             System.out.println("Segundos: " + elapsedTime / 1e9);

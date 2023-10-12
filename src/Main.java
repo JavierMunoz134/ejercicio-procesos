@@ -16,7 +16,6 @@ public class Main {
         System.out.println("Milisegundos: " + elapsedTime / 1e6);
         System.out.println("Nanosegundos: " + elapsedTime);
 
-        // Paso 6 modificado
         if (elapsedTime < 1e9) {
             System.out.println("\nHaciendo el cálculo para 100 elementos:");
 
